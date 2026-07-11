@@ -1,6 +1,6 @@
 fn main() {
     let mut x = 34;
     println!("The value is {x}");
-    x = 243;
+    x = 24;
     println!("The value is {x}");
 }
