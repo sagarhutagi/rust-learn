@@ -1,9 +1,8 @@
+struct User {
+    hello: String,
+}
+
 fn main() {
-    let reference_to_nothing = dangle();
+    println!("Hello, world!");
 }
 
-fn dangle() -> &String {
-    let s = String::from("hello");
-
-    &s
-}
