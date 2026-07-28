@@ -1,12 +1,54 @@
-   0.010044045s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: stale: changed "/home/mars/Documents/skills/rust-learn/code/src/main.rs"
-   0.010056323s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:           (vs) "/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-adb5ec48be7a1822/dep-bin-code"
-   0.010059352s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1785081284, nanos: 831239262 } < FileTime { seconds: 1785081285, nanos: 123242507 }
-   0.010086766s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: fingerprint dirty for code v0.1.0 (/home/mars/Documents/skills/rust-learn/code)/Check { test: false }/TargetInner { name: "code", doc: true, ..: with_path("/home/mars/Documents/skills/rust-learn/code/src/main.rs", Edition2024) }
-   0.010099273s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-adb5ec48be7a1822/dep-bin-code", reference_mtime: FileTime { seconds: 1785081284, nanos: 831239262 }, stale: "/home/mars/Documents/skills/rust-learn/code/src/main.rs", stale_mtime: FileTime { seconds: 1785081285, nanos: 123242507 } }))
-   0.010264504s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: stale: changed "/home/mars/Documents/skills/rust-learn/code/src/main.rs"
-   0.010268791s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:           (vs) "/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-7ed6336c02c24587/dep-test-bin-code"
-   0.010270936s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1785081284, nanos: 834440261 } < FileTime { seconds: 1785081285, nanos: 123242507 }
-   0.010291317s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: fingerprint dirty for code v0.1.0 (/home/mars/Documents/skills/rust-learn/code)/Check { test: true }/TargetInner { name: "code", doc: true, ..: with_path("/home/mars/Documents/skills/rust-learn/code/src/main.rs", Edition2024) }
-   0.010297157s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-7ed6336c02c24587/dep-test-bin-code", reference_mtime: FileTime { seconds: 1785081284, nanos: 834440261 }, stale: "/home/mars/Documents/skills/rust-learn/code/src/main.rs", stale_mtime: FileTime { seconds: 1785081285, nanos: 123242507 } }))
+   0.083024964s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: fingerprint error for code v0.1.0 (/home/mars/Documents/skills/rust-learn/code)/Check { test: false }/TargetInner { name: "code", doc: true, ..: with_path("/home/mars/Documents/skills/rust-learn/code/src/main.rs", Edition2024) }
+   0.083070187s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-c474a15193dbfda7/bin-code`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.088473433s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint: fingerprint error for code v0.1.0 (/home/mars/Documents/skills/rust-learn/code)/Check { test: true }/TargetInner { name: "code", doc: true, ..: with_path("/home/mars/Documents/skills/rust-learn/code/src/main.rs", Edition2024) }
+   0.088508942s  INFO prepare_target{force=false package_id=code v0.1.0 (/home/mars/Documents/skills/rust-learn/code) target="code"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/mars/Documents/skills/rust-learn/code/target/debug/.fingerprint/code-9691a3baa790bc17/test-bin-code`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
     Checking code v0.1.0 (/home/mars/Documents/skills/rust-learn/code)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.62s
