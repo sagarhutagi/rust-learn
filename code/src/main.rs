@@ -1,13 +1,13 @@
 #[allow(dead_code)]
 
-enum Coin{
-    Penny, 
+enum Coin {
+    Penny,
     Nickel,
-    Dime, 
+    Dime,
     Quarter,
 }
 
-fn value_of_coin(coin: Coin) -> u8{
+fn value_of_coin(coin: Coin) -> u8 {
     match coin {
         Coin::Penny => 1,
         Coin::Nickel => 2,
@@ -16,8 +16,9 @@ fn value_of_coin(coin: Coin) -> u8{
     }
 }
 
-fn main(){
-    let coin : Coin = Coin::Penny;
+fn main() {
+    let coin: Coin = Coin::Penny;
     let value = value_of_coin(coin);
     println!("{value}");
+    // Test
 }
