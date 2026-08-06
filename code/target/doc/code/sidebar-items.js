@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Coin"],"fn":["main","value_of_coin"]};
